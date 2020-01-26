@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | Kibworth Osteopaths</title>
+    <link rel="stylesheet" type="text/css" href="./resources/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/daf3abdc37.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="contact-bar-wrapper">
+            <div id="contact-bar">
+                <div id="contact-details">
+                    <a href="tel:01162793308"><i class="fas fa-phone"></i>0116 279 3308</a>
+                    <a href="mailto:info@kibworthosteopaths.co.uk"><i class="fas fa-envelope"></i>info@kibworthosteopaths.co.uk</a>
+                </div>
+            </div>
+        </div>
+        <div id="nav-bar-wrapper">
+            <div id="nav-bar">
+                <div id="logo">
+                    <a href="#">
+                        <img width="100%" src="./resources/img/kibworth-osteopaths-logo.jpg">
+                    </a>
+                </div>
+                <div id="burger-icon">
+                    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                        <i id="bars" class="fas fa-bars fa-lg"></i>
+                        <i id="times" class="fas fa-times fa-lg"></i>
+                    </a>
+                </div>
+                <nav>
+                    <ul id="main-nav">
+                        <li><a onclick="toggleOsteoSubnav()" href="#">Osteopathy<i id="osteo-down" class="fas fa-caret-down fa-lg"></i><i id="osteo-up" class="fas fa-caret-up fa-lg"></i></a></li>
+                        <ul id="osteo-lg-nav">
+                            <li><a href="#">Treatments</a></li>
+                            <li><a href="#">What to expect</a></li>
+                        </ul>
+                        <li><a href="#">Pilates</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Appointments</a></li>
+                    </ul>
+                    <ul id="mobile-nav">
+                        <li><a class="nav-link" href="#">Osteopathy</a><a href="javascript:void(0);" class="icon" onclick="toggleAccordion()"><i id="osteo-plus" class="fas fa-plus"></i><i id="osteo-minus" class="fas fa-minus"></i></a></li>
+                        <ul id="osteo-mob-nav">
+                            <li><a class="nav-link-2" href="#">Treatments</a></li>
+                            <li><a class="nav-link-2" href="#">What to expect</a></li>
+                        </ul>
+                        <li><a class="nav-link" href="#">Pilates</a></li>
+                        <li><a class="nav-link" href="#">About</a></li>
+                        <li><a class="nav-link" href="#">FAQ</a></li>
+                        <li><a class="nav-link" href="#">Appointments</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <script src="./resources/main.js"></script>
+</body>
+</html>
