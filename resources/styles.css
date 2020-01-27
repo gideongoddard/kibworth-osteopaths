@@ -34,6 +34,40 @@ i {
     padding: 0 5px;
 }
 
+section {
+    padding: 30px 0;
+}
+
+.content-wrapper {
+    width: 95%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h3 {
+    font-size: var(--type-x-large);
+    margin: 0;
+}
+
+.btn {
+    text-align: center;
+    display: block;
+    padding: 15px 20px;
+    background-color: #fff;
+    color: #38c0ff;
+    border-radius: 5px;
+    margin: 30px auto 10px auto;
+    width: 100%;
+    text-decoration: none;
+    border: 1px solid #38c0ff;
+    transition: all 500ms ease 0s;
+}
+
+.btn:hover {
+    background-color: #38c0ff;
+    color: #fff;
+}
+
 /* HEADER */
 #contact-bar-wrapper {
     background-color: #e6e6e4;
@@ -288,5 +322,37 @@ h2 {
 @media only screen and (min-width: 750px) {
     #banner {
         height: calc(100vh - 150px);
+    }
+}
+
+/* MODULE 1 */
+#mission {
+    background-color: #38c0ff;
+    color: white;
+    text-align: center;
+}
+
+/* MODEULE 2 */
+.image-right {
+    margin: 30px -2.5% 0 -2.5%;
+}
+
+@media only screen and (min-width: 1000px) {
+    .two-col-split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        grid-gap: 5%;
+        max-width: 1200px;
+    }
+    
+    .text-left, .image-right {
+        max-width: 595px;
+        margin: 0;
+    }
+
+    .image-right img {
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px 1px #505050;
     }
 }
