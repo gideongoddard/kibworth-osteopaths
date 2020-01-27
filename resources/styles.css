@@ -326,19 +326,26 @@ h2 {
 }
 
 /* MODULE 1 */
-#mission {
+.blue {
     background-color: #38c0ff;
     color: white;
+}
+
+.grey {
+    background-color: #e6e6e4;
+}
+
+.one-col {
     text-align: center;
 }
 
 /* MODEULE 2 */
-.image-right {
+.image-col {
     margin: 30px -2.5% 0 -2.5%;
 }
 
 @media only screen and (min-width: 1000px) {
-    .two-col-split {
+    .two-col {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
@@ -346,13 +353,64 @@ h2 {
         max-width: 1200px;
     }
     
-    .text-left, .image-right {
+    .text-col, .image-col {
         max-width: 595px;
         margin: 0;
     }
 
-    .image-right img {
+    .image-col img {
         border-radius: 5px;
         box-shadow: 2px 2px 5px 1px #505050;
     }
+}
+
+.text-center {
+    text-align: center;
+}
+
+footer {
+    background-color: #38c0ff;
+    color: #fff;
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul, footer li {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-left {
+    font-size: var(--type-small);
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#facebook-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+}
+
+.footer-right {
+    text-align: right;
 }
