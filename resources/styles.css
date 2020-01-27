@@ -203,6 +203,10 @@ nav a:hover {
     padding-right: 0;
 }
 
+#osteo-plus, #osteo-minus, #osteo-plus:hover, #osteo-minus:hover {
+    color: #505050;
+}
+
 @media only screen and (min-width: 750px) {
     #contact-bar {
         display: grid;
@@ -254,7 +258,7 @@ nav a:hover {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: calc(100vh - 150px);
+    height: calc(98vh - 151px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,4 +283,10 @@ h2 {
     font-weight: 300;
     margin: 0;
     padding: 0;
+}
+
+@media only screen and (min-width: 750px) {
+    #banner {
+        height: calc(100vh - 150px);
+    }
 }
