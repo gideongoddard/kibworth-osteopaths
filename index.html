@@ -12,53 +12,51 @@
 </head>
 <body>
     <header>
-        <div id="contact-bar-wrapper">
-            <div id="contact-bar">
+        <div class="wrapper grey">
+            <div class="container">
                 <div id="contact-details">
-                    <a href="tel:01162793308"><i class="fas fa-phone"></i>0116 279 3308</a>
-                    <a href="mailto:info@kibworthosteopaths.co.uk"><i class="fas fa-envelope"></i>info@kibworthosteopaths.co.uk</a>
+                    <a id="tel" href="tel:01162793308"><i class="fas fa-phone"></i>0116 279 3308</a>
+                    <a id="email" href="mailto:info@kibworthosteopaths.co.uk"><i class="fas fa-envelope"></i>info@kibworthosteopaths.co.uk</a>
                 </div>
             </div>
         </div>
-        <div id="nav-bar-wrapper">
-            <div id="nav-bar">
-                <div id="logo">
-                    <a href="#">
-                        <img width="100%" src="./resources/img/kibworth-osteopaths-logo.jpg">
-                    </a>
-                </div>
-                <div id="burger-icon">
-                    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-                        <i id="bars" class="fas fa-bars fa-lg"></i>
-                        <i id="times" class="fas fa-times fa-lg"></i>
-                    </a>
-                </div>
-                <nav>
-                    <ul id="main-nav">
-                        <li><a onclick="toggleOsteoSubnav()" href="#">Osteopathy<i id="osteo-down" class="fas fa-caret-down fa-lg"></i><i id="osteo-up" class="fas fa-caret-up fa-lg"></i></a></li>
-                        <ul id="osteo-lg-nav">
-                            <li><a href="#">About Osteopathy</a></li>
-                            <li><a href="#">Treatments</a></li>
-                            <li><a href="#">What to expect</a></li>
-                        </ul>
-                        <li><a href="#">Pilates</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Appointments</a></li>
-                    </ul>
-                    <ul id="mobile-nav">
-                        <li><a class="nav-link" href="#">Osteopathy</a><a href="javascript:void(0);" class="icon" onclick="toggleAccordion()"><i id="osteo-plus" class="fas fa-plus"></i><i id="osteo-minus" class="fas fa-minus"></i></a></li>
-                        <ul id="osteo-mob-nav">
-                            <li><a class="nav-link-2" href="#">Treatments</a></li>
-                            <li><a class="nav-link-2" href="#">What to expect</a></li>
-                        </ul>
-                        <li><a class="nav-link" href="#">Pilates</a></li>
-                        <li><a class="nav-link" href="#">About</a></li>
-                        <li><a class="nav-link" href="#">FAQ</a></li>
-                        <li><a class="nav-link" href="#">Appointments</a></li>
-                    </ul>
-                </nav>
+        <div id="nav-bar" class="container">
+            <div id="logo">
+                <a href="#">
+                    <img width="100%" src="./resources/img/kibworth-osteopaths-logo.jpg">
+                </a>
             </div>
+            <div id="burger-icon">
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i id="bars" class="fas fa-bars fa-lg"></i>
+                    <i id="times" class="fas fa-times fa-lg"></i>
+                </a>
+            </div>
+            <nav>
+                <ul id="main-nav">
+                    <li><a onclick="toggleOsteoSubnav()" href="#">Osteopathy<i id="osteo-down" class="fas fa-caret-down fa-lg"></i><i id="osteo-up" class="fas fa-caret-up fa-lg"></i></a></li>
+                    <ul id="osteo-lg-nav">
+                        <li><a href="#">About Osteopathy</a></li>
+                        <li><a href="#">Treatments</a></li>
+                        <li><a href="#">What to expect</a></li>
+                    </ul>
+                    <li><a href="#">Pilates</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Appointments</a></li>
+                </ul>
+                <ul id="mobile-nav">
+                    <li><a class="nav-link" href="#">Osteopathy</a><a href="javascript:void(0);" class="icon" onclick="toggleAccordion()"><i id="osteo-plus" class="fas fa-plus"></i><i id="osteo-minus" class="fas fa-minus"></i></a></li>
+                    <ul id="osteo-mob-nav">
+                        <li><a class="nav-link-2" href="#">Treatments</a></li>
+                        <li><a class="nav-link-2" href="#">What to expect</a></li>
+                    </ul>
+                    <li><a class="nav-link" href="#">Pilates</a></li>
+                    <li><a class="nav-link" href="#">About</a></li>
+                    <li><a class="nav-link" href="#">FAQ</a></li>
+                    <li><a class="nav-link" href="#">Appointments</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -66,7 +64,7 @@
             <h1>Kibworth Osteopaths</h1>
             <h2>Osteopathy & Pilates</h2>
         </section>
-        <section class="one-col blue">
+        <section class="one-col grey">
             <div class="content-wrapper">
                 <h3>How can we help you?</h3>
                 <p>We offer Osteopathic treatments to restore your body's musculoskeletal system to a state of balance to improve the way it functions.</p>
@@ -118,12 +116,12 @@
             <div class="content-wrapper two-col">
                 <div class="text-col">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin ex non tincidunt finibus. Maecenas eu lacus lectus. Vivamus consequat cursus mauris, sit amet lacinia nulla interdum non.</p>
-                    <p>Nunc sem quam, mattis at feugiat non, tincidunt eget massa.</p>
-                    <a class="btn" href="#">Book Appointment</a>
+                    <p>Nunc sem quam, mattis at feugiat non, tincidunt eget massa. Donec ac nulla dignissim, aliquam orci vel, rutrum ligula. Quisque iaculis elementum pulvinar.</p>
                 </div>
                 <div class="text-col">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin ex non tincidunt finibus. Maecenas eu lacus lectus. Vivamus consequat cursus mauris, sit amet lacinia nulla interdum non.</p>
-                    <p>Nunc sem quam, mattis at feugiat non, tincidunt eget massa. Donec ac nulla dignissim, aliquam orci vel, rutrum ligula. Quisque iaculis elementum pulvinar.</p>
+                    <p>Nunc sem quam, mattis at feugiat non, tincidunt eget massa.</p>
+                    <a class="btn" href="#">Book Appointment</a>
                 </div>
             </div>
         </section>
