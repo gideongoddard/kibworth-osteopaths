@@ -52,6 +52,6 @@ const toggleOsteoSubnav = () => {
 // Google Maps
 function initMap() {
     var kibworthOsteopaths = {lat: 52.533, lng: -0.998};
-    var map = new google.maps.Map(document.getElementById('map'), {zoom: 9, center: kibworthOsteopaths});
+    var map = new google.maps.Map(document.getElementById('map'), {zoom: 10, center: kibworthOsteopaths});
     var marker = new google.maps.Marker({position: kibworthOsteopaths, map: map});
 }
