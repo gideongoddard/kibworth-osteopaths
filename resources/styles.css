@@ -76,7 +76,7 @@ h3 {
 }
 
 h4 {
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
 }
 
 .wrapper {
@@ -110,7 +110,7 @@ h4 {
 }
 
 i {
-    padding: 0 5px;
+    padding-right: 5px;
 }
 
 .btn {
@@ -120,8 +120,9 @@ i {
     background-color: #fff;
     color: #38c0ff;
     border-radius: 5px;
-    margin: 30px auto 10px auto;
+    margin: 30px auto;
     width: 100%;
+    max-width: 595px;
     text-decoration: none;
     border: 1px solid #38c0ff;
     transition: all 500ms ease 0s;
@@ -130,6 +131,13 @@ i {
 .btn:hover {
     background-color: #38c0ff;
     color: #fff;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    border: 1px solid #505050;
+    margin-bottom: 50px;
 }
 
 /* ************ */
@@ -174,8 +182,19 @@ i {
         grid-template-columns: 1fr 1fr;
         justify-content: center;
         grid-gap: 5%;
+        width: 95%;
         max-width: 1200px;
         text-align: left;
+    }
+
+    .l-r {
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+
+    .r-l {
+        grid-row-start: 1;
+        grid-column-start: 1;
     }
 
     .two-col h3 {
@@ -295,7 +314,7 @@ a.icon:hover {
 #osteo-lg-nav {
     display: none;
     position: absolute;
-    top: 150px;
+    top: 140px;
     left: 0;
     background-color: #38c0ff;
     width: 100%;
@@ -308,7 +327,7 @@ a.icon:hover {
 }
 
 #osteo-up, #osteo-down {
-    padding-right: 0;
+    padding: 0 0 0 5px;
 }
 
 @media only screen and (min-width: 750px) {
@@ -363,41 +382,65 @@ footer {
     width: 100%;
 }
 
+.footer-grid {
+    padding: 20px 0 1px 0;
+}
+
 footer ul {
     list-style-type: none;
-}
-
-footer ul, footer li {
     padding: 0;
-    margin: 0;
+    margin-top: 0;
 }
 
-.footer-left {
-    font-size: var(--type-small);
+footer li {
+    margin: 5px 0;
 }
 
 footer a {
-    text-decoration: none;
     color: #fff;
 }
 
 footer a:hover {
     text-decoration: underline;
+    color: #fff
 }
 
-#facebook-link {
-    text-decoration: none;
-    color: #fff;
+@media only screen and (max-width: 750px) {
+    .footer-left ul {
+        margin-bottom: 0;
+    }
+    
+    .footer-center ul {
+        margin-top: 0;
+    }
 }
 
-.footer-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: end;
-}
+@media only screen and (min-width: 750px) {
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-content: start;
+        font-size: var(--type-small);
+    }
 
-.footer-right {
-    text-align: right;
+    .footer-right {
+        text-align: right;
+    }
+
+    #links-heading {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #social-icons {
+        grid-row-start: 1;
+        grid-column-start: 3;
+    }
+
+    #copyright {
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
 }
 
 /* *************** */
