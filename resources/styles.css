@@ -15,6 +15,9 @@
   --type-xx-large: 200%;
   --type-xxx-large: 300%;
   --type-xxxx-large: 400%;
+  --blue: #51c6fc;
+  --dark-grey: #505050;
+  --light-grey: #e6e6e4;
 }
 
 * {
@@ -31,16 +34,16 @@ html {
 body {
     margin: 0;
     font-size: var(--type-base);
-    color: #616161;
+    color: var(--dark-grey);
 }
 
 a {
     text-decoration: none;
-    color: #505050;
+    color: var(--dark-grey);
 }
 
 a:hover {
-    color: #38c0ff;
+    color: var(--blue);
 }
 
 p a {
@@ -101,12 +104,12 @@ h4 {
 }
 
 .grey {
-    background-color: #e6e6e4;
+    background-color: var(--light-grey);
 }
 
 .blue {
-    background-color: #38c0ff;
-    color: white;
+    background-color: var(--blue);
+    color: #fff;
 }
 
 i {
@@ -118,26 +121,19 @@ i {
     display: block;
     padding: 15px 20px;
     background-color: #fff;
-    color: #38c0ff;
+    color: var(--blue);
     border-radius: 5px;
     margin: 30px auto;
     width: 100%;
     max-width: 595px;
     text-decoration: none;
-    border: 1px solid #38c0ff;
+    border: 1px solid var(--blue);
     transition: all 500ms ease 0s;
 }
 
 .btn:hover {
-    background-color: #38c0ff;
+    background-color: var(--blue);
     color: #fff;
-}
-
-#map {
-    height: 400px;
-    width: 100%;
-    border: 1px solid #505050;
-    margin-bottom: 50px;
 }
 
 /* ************ */
@@ -209,7 +205,7 @@ i {
 
     .image-col img {
         border-radius: 5px;
-        box-shadow: 2px 2px 5px 1px #505050;
+        box-shadow: 2px 2px 5px 1px var(--dark-grey);
     }
 }
 
@@ -233,6 +229,7 @@ i {
     grid-template-columns: 1fr 4fr 1fr;
     align-items: center;
     text-align: center;
+    height: 100px;
 }
 
 #logo {
@@ -253,7 +250,7 @@ i {
 
 #mobile-nav {
     display: none;
-    background-color: #e6e6e4;
+    background-color: var(--light-grey);
     margin: 5px -2.5% 0 -3%;
     padding-bottom: 5px;
 }
@@ -273,7 +270,7 @@ nav ul {
 nav li {
     font-size: var(--type-medium);
     padding: 2px;
-    color: #505050;
+    color: var(--dark-grey);
     margin-left: 2px;
     text-align: left;
 }
@@ -302,7 +299,7 @@ a.icon {
 }
 
 a.icon:hover {
-    color: #505050;
+    color: var(--dark-grey);
 }
 
 #osteo-mob-nav {
@@ -314,12 +311,13 @@ a.icon:hover {
 #osteo-lg-nav {
     display: none;
     position: absolute;
-    top: 140px;
+    top: 150px;
     left: 0;
-    background-color: #38c0ff;
+    background-color: var(--blue);
     width: 100%;
-    padding: 15px 20%;
+    padding: 15px 5%;
     justify-content: center;
+    font-size: var(--type-small);
 }
 
 #osteo-lg-nav a:hover {
@@ -377,7 +375,7 @@ a.icon:hover {
 /* ************* */
 
 footer {
-    background-color: #38c0ff;
+    background-color: var(--blue);
     color: #fff;
     width: 100%;
 }
@@ -455,4 +453,10 @@ footer a:hover {
     .banner {
         height: 75vh;
     }
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin: 20px auto 50px auto;
 }
