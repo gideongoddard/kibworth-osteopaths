@@ -398,6 +398,10 @@ footer {
     padding: 20px 0 1px 0;
 }
 
+#links-heading h4 {
+    text-align: left;
+}
+
 footer ul {
     list-style-type: none;
     padding: 0;
