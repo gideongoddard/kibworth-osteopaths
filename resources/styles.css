@@ -308,6 +308,10 @@ a.icon {
     cursor: pointer;
 }
 
+#mobile-nav a.icon:hover {
+    color: var(--dark-grey);
+}
+
 a.icon:hover {
     color: var(--dark-grey);
 }
