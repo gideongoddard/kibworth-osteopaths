@@ -175,7 +175,7 @@ i {
 
 .map-col {
     width: 95%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .testimonial-wrapper {
@@ -235,6 +235,10 @@ i {
 
     .image-col img {
         box-shadow: 2px 2px 5px 1px var(--dark-grey);
+    }
+
+    .map-col {
+        width: 100%;
     }
 }
 
