@@ -197,11 +197,6 @@ i {
     font-size: var(--type-xxx-large);
   }
 
-  .two-col-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
 @media only screen and (min-width: 1000px) {
     .one-col {
         text-align: center;
@@ -248,6 +243,11 @@ i {
 
     .map-col {
         width: 100%;
+    }
+
+    .two-col-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
