@@ -154,7 +154,6 @@ i {
     flex-direction: column;
     text-align: center;
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -224,6 +223,11 @@ i {
     }
 
     .two-col h3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .two-col h4 {
         grid-column-start: 1;
         grid-column-end: 3;
     }
@@ -487,13 +491,14 @@ footer a:hover {
 /* *************** */
 
 #home-banner {
-    background-image: url('./img/neck-treatment-2-banner.jpg');
+    background-image: url('./img/kmc-banner.jpg');
+    background-position: center;
 }
 
-@media only screen and (min-width: 750px) {
-    .banner {
-        height: 75vh;
-    }
+#about .image-col {
+    width: 80%;
+    max-width: 450px;
+    margin: 30px auto;
 }
 
 #map {
@@ -514,4 +519,20 @@ footer a:hover {
 
 #appointments li {
     margin: 5px 0;
+}
+
+@media only screen and (min-width: 750px) {
+    .banner {
+        height: 75vh;
+    }
+
+    #about .image-col {
+        justify-self: end;
+        align-self: center;
+        transform: rotate(350deg);
+    }
+
+    #about .two-col {
+        grid-gap: 0 5%;
+    }
 }
