@@ -183,6 +183,8 @@ i {
     padding: 3%;
     border-left: 6px solid #fff;
     text-align: left;
+    width: 85%;
+    margin: auto;
 }
 
 .testimonial-wrapper:before {
