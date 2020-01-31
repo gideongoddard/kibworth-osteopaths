@@ -125,7 +125,7 @@ i {
     text-transform: uppercase;
     display: block;
     padding: 15px 20px;
-    background-color: #fff;
+    background-color: none;
     color: var(--blue);
     border-radius: 5px;
     margin: 30px auto;
@@ -195,6 +195,11 @@ i {
     top: 30px;
     color: #fff;
     font-size: var(--type-xxx-large);
+  }
+
+  .two-col-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
 @media only screen and (min-width: 1000px) {
@@ -534,5 +539,9 @@ footer a:hover {
 
     #about .two-col {
         grid-gap: 0 5%;
+    }
+
+    #conditions .one-col{
+        text-align: left;
     }
 }
