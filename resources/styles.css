@@ -178,6 +178,24 @@ i {
     margin: auto;
 }
 
+.testimonial-wrapper {
+    background-color: rgba(216, 221, 230, 0.4);
+    padding: 3%;
+    border-left: 6px solid #fff;
+    text-align: left;
+}
+
+.testimonial-wrapper:before {
+    content: open-quote;
+    display: inline;
+    line-height: 0;
+    left: 0;
+    position: relative;
+    top: 30px;
+    color: #fff;
+    font-size: var(--type-xxx-large);
+  }
+
 @media only screen and (min-width: 1000px) {
     .one-col {
         text-align: center;
