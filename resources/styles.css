@@ -240,6 +240,14 @@ i {
     width: 90%;
   }
 
+  .faq {
+      margin-bottom: 40px;
+  }
+
+  .faq h3 {
+    text-align: left;
+  }
+
 @media only screen and (min-width: 1000px) {
     .one-col {
         max-width: 1000px;
@@ -560,7 +568,7 @@ footer a:hover {
     margin: 20px auto 30px auto;
 }
 
-.appointment-times {
+.appointment-times, .price-list {
     padding-left: 0;
     margin-bottom: 30px;
 }
@@ -570,13 +578,26 @@ footer a:hover {
     grid-template-columns: 1fr 1fr;
 }
 
+.band-price {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
 #appointments li {
     margin: 5px 0;
+}
+
+.price-list li {
+    margin: 10px 0;
 }
 
 @media only screen and (max-width: 750px) {
     #about .text-col {
     padding-bottom: 40px;
+    }
+    
+    .price {
+        justify-self: center;
     }
 }
 
