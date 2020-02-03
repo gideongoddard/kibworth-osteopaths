@@ -47,11 +47,14 @@ a:hover {
     color: var(--blue);
 }
 
-p a {
+p a, .text-col ul a {
     text-decoration: underline;
     color: #0000ed;
 }
 
+.text-col ul a:hover {
+    color: var(--blue);
+}
 /* ************* */
 /* GLOBAL STYLES */
 /* ************* */
