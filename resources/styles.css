@@ -242,6 +242,7 @@ i {
   }
 
   .faq {
+      padding-top: 15px;
       margin-bottom: 40px;
   }
 
@@ -252,7 +253,7 @@ i {
   .table {
     background-color: var(--light-blue);
     border: 1px solid var(--dark-grey);
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     padding-top: 15px;
     border-radius: 5px;
 }
@@ -260,7 +261,7 @@ i {
 .table ul {
     padding: 0 10px;
     list-style-type: none;
-    font-size: var(--type-small);
+    font-size: var(--type-medium);
 }
 
 .table li {
