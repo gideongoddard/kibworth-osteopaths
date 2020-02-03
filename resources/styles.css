@@ -16,7 +16,7 @@
   --type-xxx-large: 300%;
   --type-xxxx-large: 400%;
   --blue: #51c6fc;
-  --light-blue: #97deff;
+  --light-blue: #bde9fd;
   --dark-grey: #505050;
   --light-grey: #e6e6e4;
 }
@@ -27,6 +27,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-size: 16px;
 } @supports (display: grid) {
     html {font-size: 10px;}
@@ -248,6 +249,24 @@ i {
     text-align: left;
   }
 
+  .table {
+    background-color: var(--light-blue);
+    border: 1px solid var(--dark-grey);
+    margin-bottom: 30px;
+    padding-top: 15px;
+    border-radius: 5px;
+}
+
+.table ul {
+    padding: 0 10px;
+    list-style-type: none;
+    font-size: var(--type-small);
+}
+
+.table li {
+    margin: 10px 0;
+}
+
 @media only screen and (min-width: 1000px) {
     .one-col {
         max-width: 1000px;
@@ -304,6 +323,18 @@ i {
     .two-col-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .side-col {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 5%;
+        width: 95%;
+        max-width: 1200px;
+    }
+
+    .table ul {
+        font-size: var(--type-xx-small);
     }
 }
 
@@ -568,7 +599,7 @@ footer a:hover {
     margin: 20px auto 30px auto;
 }
 
-.appointment-times, .price-list {
+.appointment-times {
     padding-left: 0;
     margin-bottom: 30px;
 }
@@ -578,26 +609,13 @@ footer a:hover {
     grid-template-columns: 1fr 1fr;
 }
 
-.band-price {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
 #appointments li {
     margin: 5px 0;
-}
-
-.price-list li {
-    margin: 10px 0;
 }
 
 @media only screen and (max-width: 750px) {
     #about .text-col {
     padding-bottom: 40px;
-    }
-    
-    .price {
-        justify-self: center;
     }
 }
 
@@ -619,5 +637,28 @@ footer a:hover {
 
     #conditions .one-col{
         text-align: left;
+    }
+}
+
+/* ********** */
+/* FAQ STYLES */
+/* ********** */
+
+.price-list {
+    padding-left: 0;
+}
+
+.price-list li {
+    margin: 10px 0;
+}
+
+.band-price {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+@media only screen and (max-width: 750px) {
+    .price {
+        justify-self: center;
     }
 }
