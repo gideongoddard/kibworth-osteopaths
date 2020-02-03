@@ -160,6 +160,28 @@ i {
     background-repeat: no-repeat;
 }
 
+.breadcrumbs {
+    width: 100%;
+    height: 50px;
+    font-size: var(--type-small);
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-contents {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.breadcrumb-contents a {
+    color: white;
+}
+
+.breadcrumb-contents a:hover {
+    text-decoration: underline;
+}
+
 .two-col {
     width: 100%;
     padding-bottom: 0;
@@ -197,6 +219,21 @@ i {
     top: 30px;
     color: #fff;
     font-size: var(--type-xxx-large);
+  }
+
+  .heading {
+      height: 250px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .heading h1 {
+    color: var(--dark-grey);
+    text-decoration: none;
+    text-transform: none;
+    width: 90%;
   }
 
 @media only screen and (min-width: 1000px) {
