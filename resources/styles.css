@@ -252,7 +252,7 @@ i {
   }
 
   .table {
-    background-color: var(--light-blue);
+    background-color: var(--light-grey);
     border: 1px solid var(--dark-grey);
     margin-bottom: 15px;
     padding-top: 15px;
@@ -276,7 +276,7 @@ i {
 .qa-q {
     text-align: left;
     padding: 15px;
-    background-color: var(--blue);
+    background-color: var(--dark-grey);
     color: #fff;
     border-radius: 5px 5px 0 0 ;
 }
@@ -292,7 +292,7 @@ i {
 
 .qa-a {
     padding: 15px;
-    background-color: var(--light-blue);
+    background-color: var(--light-grey);
     border-radius: 0 0 5px 5px;
 }
 
