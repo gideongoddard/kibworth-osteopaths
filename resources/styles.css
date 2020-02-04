@@ -269,29 +269,31 @@ i {
     margin: 10px 0;
 }
 
-.step-item {
+.qa-box {
     margin-bottom: 20px;
 }
 
-.step-heading {
+.qa-q {
     text-align: left;
     padding: 15px;
     background-color: var(--blue);
     color: #fff;
+    border-radius: 5px 5px 0 0 ;
 }
 
-.step-heading h4 {
+.qa-q h4 {
     text-align: left;
     margin: 0;
 }
 
-.step-item p {
+.qa-box p {
     margin-top: 5px;
 }
 
-.step-content {
+.qa-a {
     padding: 15px;
     background-color: var(--light-blue);
+    border-radius: 0 0 5px 5px;
 }
 
 @media only screen and (min-width: 1000px) {
