@@ -111,6 +111,9 @@ header {
     padding: 40px 0;
 }
 
+.tight {
+    padding: 0;
+}
 .container h3, .container h4 {
     text-align: center;
 }
