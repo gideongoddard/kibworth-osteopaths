@@ -341,14 +341,19 @@ i {
 
 .cards {
     display: grid;
-    grid-gap: 5%;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
 }
 
 .card {
     border-radius: 5px;
-    box-shadow: 2px 2px 5px 1px var(--light-grey);
+    box-shadow: 2px 2px 5px 1px var(--dark-grey);
     display: grid;
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+.cards h3 {
+    margin: 0;
 }
 
 .card img {
@@ -443,6 +448,15 @@ i {
 
     .index ul {
         font-size: var(--type-x-small);
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0 5%;
+    }
+
+    .cards h3 {
+        grid-area: 1 / 1 / span 1 / span 2;
     }
 }
 
