@@ -195,7 +195,7 @@ i {
 }
 
 .text-col {
-    width: 95%;
+    width: 90%;
     margin: auto;
 }
 
@@ -204,7 +204,7 @@ i {
 }
 
 .map-col {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -368,6 +368,7 @@ i {
     }
     
     .text-col, .image-col {
+        width: 100%;
         max-width: 595px;
         margin: 0;
     }
@@ -378,10 +379,6 @@ i {
 
     .image-col img {
         box-shadow: 2px 2px 5px 1px var(--dark-grey);
-    }
-
-    .map-col {
-        width: 100%;
     }
 
     .two-col-list {
