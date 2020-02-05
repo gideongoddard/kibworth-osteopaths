@@ -228,47 +228,76 @@ i {
     font-size: var(--type-xxx-large);
   }
 
-  .heading {
-      height: 250px;
-      display: flex;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      background-color: var(--light-blue);
-  }
+.heading {
+    height: 250px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-blue);
+}
 
-  .heading h1 {
+.heading h1 {
     color: var(--dark-grey);
     text-decoration: none;
     text-transform: none;
     width: 90%;
-  }
-
-  .faq {
-      padding-top: 15px;
-      margin-bottom: 40px;
-  }
-
-  .faq h3 {
-    text-align: left;
-  }
-
-  .table {
-    background-color: var(--light-grey);
-    border: 1px solid var(--dark-grey);
-    margin-bottom: 15px;
-    padding-top: 15px;
-    border-radius: 5px;
 }
 
-.table ul {
-    padding: 0 10px;
+.faq {
+    padding-top: 15px;
+    margin-bottom: 40px;
+}
+
+.faq h3 {
+    text-align: left;
+}
+
+.index {
+    margin-bottom: 20px;
+}
+
+.index-heading {
+    background-color: var(--blue);
+    color: #fff;
+    padding: 15px 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.index-body {
+    background-color: var(--light-blue);
+    border-radius: 0 0 5px 5px;
+}
+
+.index h4 {
+    margin: 0;
+}
+
+.index ul {
+    padding: 0;
+    margin: 0;
     list-style-type: none;
     font-size: var(--type-medium);
 }
 
-.table li {
-    margin: 10px 0;
+.index li {
+    border-top: 1px solid var(--blue);
+}
+
+.index li:first-child {
+    border-top: none;
+}
+
+.index a {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.index a:hover {
+    background-color: var(--blue);
+    color: #fff;
 }
 
 .qa-box {
@@ -278,9 +307,9 @@ i {
 .qa-q {
     text-align: left;
     padding: 15px;
-    background-color: var(--dark-grey);
+    background-color: var(--blue);
     color: #fff;
-    border-radius: 5px 5px 0 0 ;
+    border-radius: 5px 5px 0 0;
 }
 
 .qa-q h4 {
@@ -293,8 +322,8 @@ i {
 }
 
 .qa-a {
-    padding: 15px;
-    background-color: var(--light-grey);
+    padding: 10px 15px;
+    background-color: var(--light-blue);
     border-radius: 0 0 5px 5px;
 }
 
@@ -362,14 +391,14 @@ i {
 
     .side-col {
         display: grid;
-        grid-template-columns: 1fr 3fr;
-        grid-gap: 5%;
+        grid-template-columns: 2fr 5fr;
+        grid-gap: 2.5%;
         width: 95%;
         max-width: 1200px;
     }
 
-    .table ul {
-        font-size: var(--type-xx-small);
+    .index ul {
+        font-size: var(--type-x-small);
     }
 }
 
@@ -681,6 +710,7 @@ footer a:hover {
 
 .price-list {
     padding-left: 0;
+    margin: 10px 0;
 }
 
 .price-list li {
