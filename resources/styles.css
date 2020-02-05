@@ -3,7 +3,7 @@
 /* ******************** */
 
 :root {
-  --type-base: calc(1.3em + 0.5vw);
+  --type-base: calc(1.4em + 0.4vw);
   --type-xxxx-small: 30%;
   --type-xxx-small: 55%;
   --type-xx-small: 65%;
