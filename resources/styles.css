@@ -4,6 +4,7 @@
 
 :root {
   --type-base: calc(1.4em + 0.4vw);
+  --type-height: calc(1.4em + 0.3vw);
   --type-xxxx-small: 30%;
   --type-xxx-small: 55%;
   --type-xx-small: 65%;
@@ -195,7 +196,7 @@ i {
 }
 
 .one-col {
-    line-height: var(--type-base);
+    line-height: var(--type-height);
 }
 
 .two-col {
@@ -206,7 +207,7 @@ i {
 .text-col {
     width: 90%;
     margin: auto;
-    line-height: var(--type-base);
+    line-height: var(--type-height);
 }
 
 .image-col {
@@ -216,7 +217,7 @@ i {
 .map-col {
     width: 90%;
     margin: 0 auto;
-    line-height: var(--type-base);
+    line-height: var(--type-height);
 }
 
 .testimonial-wrapper {
@@ -336,7 +337,7 @@ i {
     padding: 10px 15px;
     background-color: var(--light-blue);
     border-radius: 0 0 5px 5px;
-    line-height: var(--type-base);
+    line-height: var(--type-height);
 }
 
 .cards {
@@ -780,18 +781,22 @@ footer a:hover {
     margin: 10px 0;
 }
 
-.price-list li {
-    margin: 10px 0;
-}
-
 .band-price {
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
 
-@media only screen and (max-width: 750px) {
+.price {
+    justify-self: center;
+}
+
+@media only screen and (min-width: 750px) {
+    .band-price {
+        grid-template-columns: 2fr 1fr;
+    }
+
     .price {
-        justify-self: center;
+        justify-self: left;
     }
 }
 
