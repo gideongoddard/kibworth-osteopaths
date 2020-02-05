@@ -194,6 +194,10 @@ i {
     text-decoration: underline;
 }
 
+.one-col {
+    line-height: var(--type-base);
+}
+
 .two-col {
     width: 100%;
     padding-bottom: 0;
@@ -338,7 +342,6 @@ i {
 @media only screen and (min-width: 1000px) {
     .one-col {
         max-width: 1000px;
-        line-height: var(--type-base);
     }
 
     .center {
