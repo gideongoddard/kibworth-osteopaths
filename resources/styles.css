@@ -339,6 +339,41 @@ i {
     line-height: var(--type-base);
 }
 
+.cards {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 1px var(--light-grey);
+    display: grid;
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+}
+
+.card-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text p {
+    margin: 5px 0;
+}
+
+.card h4 {
+    text-align: left;
+}
+
+.card .btn {
+    margin-bottom: 0;
+}
+
 @media only screen and (min-width: 1000px) {
     .one-col {
         max-width: 1000px;
