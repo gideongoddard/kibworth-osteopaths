@@ -67,7 +67,6 @@ h1 {
     font-weight: 300;
     margin: 0;
     padding: 0;
-    text-decoration: underline;
 }
 
 h2 {
@@ -656,7 +655,7 @@ footer a:hover {
 }
 
 @media only screen and (min-width: 750px) {
-    .banner {
+    #home-banner {
         height: 75vh;
     }
 
@@ -696,5 +695,20 @@ footer a:hover {
 @media only screen and (max-width: 750px) {
     .price {
         justify-self: center;
+    }
+}
+
+/* ***************** */
+/* OSTEOPATHY STYLES */
+/* ***************** */
+
+#osteopathy-banner {
+    background-image: url('./img/neck-treatment-banner.jpg');
+    background-position: right;
+}
+
+@media only screen and (min-width: 750px) {
+    #osteopathy-banner {
+        height: 50vh;
     }
 }
