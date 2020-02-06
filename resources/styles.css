@@ -314,6 +314,8 @@ i {
 
 .qa-box {
     margin-bottom: 20px;
+    background-color: var(--light-blue);
+    border-radius: 5px;
 }
 
 .qa-q {
@@ -335,8 +337,6 @@ i {
 
 .qa-a {
     padding: 10px 15px;
-    background-color: var(--light-blue);
-    border-radius: 0 0 5px 5px;
     line-height: var(--type-height);
 }
 
@@ -458,6 +458,13 @@ i {
 
     .cards h3 {
         grid-area: 1 / 1 / span 1 / span 2;
+    }
+
+    .qa-tiles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        align-items: stretch;
     }
 }
 
