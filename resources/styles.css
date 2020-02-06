@@ -830,6 +830,11 @@ footer a:hover {
     background-position: center;
 }
 
+.address {
+    list-style-type: none;
+    padding-left: 0;
+}
+
 @media only screen and (min-width: 750px) {
     #pilates-banner {
         height: 50vh;
