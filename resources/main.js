@@ -51,7 +51,13 @@ const toggleOsteoSubnav = () => {
 
 // Google Maps
 function initMap() {
-    var kibworthOsteopaths = {lat: 52.534, lng: -0.999};
-    var map = new google.maps.Map(document.getElementById('map'), {zoom: 11, center: kibworthOsteopaths});
-    var marker = new google.maps.Marker({position: kibworthOsteopaths, map: map});
+    var osteo = {lat: 52.534, lng: -0.999};
+    var osteoMap = new google.maps.Map(document.getElementById('home-map'), {zoom: 12, center: osteo});
+    var marker = new google.maps.Marker({position: osteo, map: osteoMap});
+}
+
+function initMap() {
+    var pilates = {lat: 52.534, lng: -0.931};
+    var pilatesMap = new google.maps.Map(document.getElementById('pilates-map'), {zoom: 12, center: pilates});
+    var marker = new google.maps.Marker({position: pilates, map: pilatesMap});
 }
