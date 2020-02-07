@@ -452,12 +452,12 @@ i {
     }
 
     .cards {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 0 5%;
     }
 
     .cards h3 {
-        grid-area: 1 / 1 / span 1 / span 2;
+        grid-area: 1 / 1 / span 1 / span 3;
     }
 
     .qa-tiles {
