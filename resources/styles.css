@@ -481,6 +481,10 @@ i {
     padding-bottom: 0;
 }
 
+.loose-bottom {
+    padding-bottom: 40px;
+}
+
 /* ************* */
 /* HEADER STYLES */
 /* ************* */
