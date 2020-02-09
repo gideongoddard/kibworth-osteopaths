@@ -691,6 +691,10 @@ footer a:hover {
     color: #fff
 }
 
+#social-icons a {
+    margin-right: 10px;
+}
+
 @media only screen and (max-width: 750px) {
     .footer-left ul {
         margin-bottom: 0;
@@ -716,11 +720,17 @@ footer a:hover {
     #links-heading {
         grid-column-start: 1;
         grid-column-end: 3;
+        align-self: center;
     }
 
     #social-icons {
         grid-row-start: 1;
         grid-column-start: 3;
+    }
+
+    #social-icons a {
+        margin-right: 0;
+        margin-left: 10px;
     }
 
     #copyright {
