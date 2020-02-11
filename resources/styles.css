@@ -784,12 +784,6 @@ footer a:hover {
     grid-template-columns: 1fr 1fr;
 }
 
-@media only screen and (max-width: 750px) {
-    .about .text-col {
-    padding-bottom: 40px;
-    }
-}
-
 @media only screen and (min-width: 750px) {
     #home-banner {
         height: 75vh;
