@@ -748,7 +748,7 @@ footer a:hover {
     background-position: center;
 }
 
-#about .image-col {
+.emily-pic {
     width: 80%;
     max-width: 450px;
     margin: auto;
@@ -771,7 +771,7 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 750px) {
-    #about .text-col {
+    .about .text-col {
     padding-bottom: 40px;
     }
 }
@@ -781,13 +781,13 @@ footer a:hover {
         height: 75vh;
     }
 
-    #about .image-col {
+    .emily-pic {
         justify-self: end;
         align-self: center;
         transform: rotate(350deg);
     }
 
-    #about .two-col {
+    .about .two-col {
         grid-gap: 0 5%;
     }
 
