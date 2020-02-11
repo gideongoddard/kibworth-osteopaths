@@ -62,6 +62,12 @@ function initPilatesMap() {
     var marker = new google.maps.Marker({position: pilates, map: pilatesMap});
 }
 
+function initAboutMap() {
+    var osteo = {lat: 52.534, lng: -0.999};
+    var osteoMap = new google.maps.Map(document.getElementById('about-map'), {zoom: 12, center: osteo});
+    var marker = new google.maps.Marker({position: osteo, map: osteoMap});
+}
+
 function initAppointmentsMaps() {
     var osteo = {lat: 52.534, lng: -0.999};
     var pilates = {lat: 52.534, lng: -0.931};
