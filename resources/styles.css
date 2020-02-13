@@ -705,6 +705,12 @@ footer a:hover {
     color: #fff
 }
 
+.goc {
+    padding: 15px 0;
+    width: 125px;
+    justify-self: end;
+}
+
 #social-icons a {
     margin-right: 10px;
 }
