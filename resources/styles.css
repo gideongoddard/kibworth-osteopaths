@@ -157,6 +157,11 @@ i {
     width: 50%;
 }
 
+.sublist {
+    list-style-type: lower-alpha;
+    margin-bottom: 10px;
+}
+
 /* ************ */
 /* MODULE SYLES */
 /* ************ */
@@ -261,7 +266,7 @@ i {
     margin-bottom: 40px;
 }
 
-.faq h3 {
+.faq h3, #privacy h3, #privacy h4 {
     text-align: left;
 }
 
