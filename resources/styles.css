@@ -836,9 +836,9 @@ footer a:hover {
 }
 
 .emily-pic {
-    width: 80%;
     max-width: 450px;
     margin: auto;
+    padding: 20px;
 }
 
 .map {
