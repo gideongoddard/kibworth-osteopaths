@@ -150,6 +150,16 @@ i {
     color: #fff;
 }
 
+.btn-blue {
+    color: #fff;
+    background-color: var(--blue);
+}
+
+.btn-blue:hover {
+    color: var(--blue);
+    background-color: #fff;
+}
+
 .separator {
     height: 2px;
     background-color: #fff;
