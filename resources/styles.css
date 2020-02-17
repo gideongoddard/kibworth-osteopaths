@@ -401,7 +401,8 @@ i {
 
 .info-box {
     background-color: var(--light-blue);
-    padding: 50px;
+    padding: 7% 5%;
+    border-radius: 5px;
 }
 
 .info-outer {
@@ -409,7 +410,7 @@ i {
     color: #fff;
     border-left: 7px solid #fff;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr;
     align-items: center;
 }
 
@@ -421,12 +422,7 @@ i {
 }
 
 .info-right {
-    padding: 20px 20px 20px 0
-}
-
-.info-right p {
-    padding-left: 20px;
-    border-left: 2px solid white;
+    padding: 0 5% 5% 5%;
 }
 
 .tight-top {
@@ -545,6 +541,19 @@ i {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
+    }
+
+    .info-outer {
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .info-right {
+        padding: 20px 20px 20px 0;
+    }
+
+    .info-right p {
+        padding-left: 20px;
+        border-left: 2px solid white;
     }
 
     .tight-top {
