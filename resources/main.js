@@ -76,3 +76,35 @@ function initAppointmentsMaps() {
     var osteoMarker = new google.maps.Marker({position: osteo, map: osteoMap});
     var pilatesMarker = new google.maps.Marker({position: pilates, map: pilatesMap});
 }
+
+// Modal
+let modal = document.getElementById('takeoverModal');
+let span = document.getElementsByClassName('close')[0];
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+document.onreadystatechange = function() {
+    let modalCookie = getCookie('modalCookie');
+    if (modalCookie != 'closed') {
+        modal.style.display = 'block';
+    }
+}
+
+span.onclick = function() {
+    modal.style.display = 'none';
+    document.cookie = 'modalCookie=closed';
+}
