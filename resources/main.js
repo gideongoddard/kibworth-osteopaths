@@ -79,7 +79,7 @@ function initAppointmentsMaps() {
 
 // Modal
 let modal = document.getElementById('takeoverModal');
-let span = document.getElementsByClassName('close')[0];
+let span = document.getElementById('close');
 
 function getCookie(cname) {
     var name = cname + "=";

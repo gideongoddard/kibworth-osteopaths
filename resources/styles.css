@@ -204,13 +204,13 @@ i {
     max-width: 1200px;
 }
 
-.close {
+#close {
     color: #fff;
     float: right;
     font-size: var(--type-xx-large);
 }
 
-.close:hover, .close:focus {
+#close:hover, #close:focus {
     cursor: pointer;
 }
 
