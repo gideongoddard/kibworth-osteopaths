@@ -106,5 +106,5 @@ document.onreadystatechange = function() {
 
 span.onclick = function() {
     modal.style.display = 'none';
-    document.cookie = 'modalCookie=read; max-age=3600';
+    document.cookie = 'modalCookie=read; path=/; max-age=3600';
 }

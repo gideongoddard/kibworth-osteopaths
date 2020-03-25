@@ -10,4 +10,4 @@ let modal=document.getElementById('takeoverModal');let span=document.getElementB
 if(c.indexOf(name)==0){return c.substring(name.length,c.length)}}
 return""}
 document.onreadystatechange=function(){let modalCookie=getCookie('modalCookie');if(modalCookie!='read'){modal.style.display='block'}}
-span.onclick=function(){modal.style.display='none';document.cookie='modalCookie=read;max-age=3600'}
+span.onclick=function(){modal.style.display='none';document.cookie='modalCookie=read;path=/;max-age=3600'}
