@@ -99,12 +99,12 @@ function getCookie(cname) {
 
 document.onreadystatechange = function() {
     let modalCookie = getCookie('modalCookie');
-    if (modalCookie != 'closed') {
+    if (modalCookie != 'read') {
         modal.style.display = 'block';
     }
 }
 
 span.onclick = function() {
     modal.style.display = 'none';
-    document.cookie = 'modalCookie=closed';
+    document.cookie = 'modalCookie=read; max-age=3600';
 }
