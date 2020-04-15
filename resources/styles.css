@@ -816,8 +816,12 @@ footer a:hover {
 
 .goc {
     padding: 15px 0;
-    width: 125px;
+    width: 300px;
     justify-self: end;
+}
+
+.goc img {
+    max-width: 125px;
 }
 
 #social-icons a {
