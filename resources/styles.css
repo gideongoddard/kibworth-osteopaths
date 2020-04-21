@@ -300,8 +300,9 @@ i {
 .heading {
     height: 250px;
     display: flex;
+    flex-direction: column;
     text-align: center;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: var(--light-blue);
 }
@@ -402,6 +403,67 @@ i {
     grid-template-columns: 1fr;
 }
 
+.filters {
+    padding: 20px 10px 10px 10px;
+    margin: 20px 0 10px 0;
+    background-color: var(--light-blue);
+}
+
+.filter {
+    font-size: var(--type-small);
+    display: inline-block;
+    margin: 0 0 10px 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.filters .weekly-tips-color:hover {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+
+.filters .another-cat-color:hover {
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+}
+
+.filters .all-color:hover {
+    background-color: var(--dark-grey);
+    color: white;
+    border: 1px solid var(--dark-grey);
+}
+
+.cat {
+    font-size: var(--type-small);
+    align-self: flex-start;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.all-color {
+    transition: all 500ms ease 0s;
+}
+
+.no-cat-color {
+    border: none;
+}
+
+.weekly-tips-color {
+    color: red;
+    transition: all 500ms ease 0s;
+}
+
+.another-cat-color {
+    color: blue;
+    transition: all 500ms ease 0s;
+}
+
 .card {
     border-radius: 5px;
     box-shadow: 2px 2px 5px 1px var(--dark-grey);
@@ -497,6 +559,10 @@ i {
     .cards h3 {
         grid-area: 1 / 1 / span 1 / span 2;
     }
+
+    .filters {
+        grid-area: 2 / 1 / span 1 / span 2;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -577,6 +643,10 @@ i {
 
     .cards h3 {
         grid-area: 1 / 1 / span 1 / span 3;
+    }
+
+    .filters {
+        grid-area: 2 / 1 / span 1 / span 3;
     }
 
     .qa-tiles {
