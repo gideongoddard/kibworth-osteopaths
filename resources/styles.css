@@ -499,6 +499,49 @@ i {
     margin-bottom: 0;
 }
 
+.video-caption {
+    text-align: center;
+}
+
+.video-caption iframe {
+    margin-bottom: -9px;
+}
+
+.video-caption p {
+    margin: 0 0 30px 0;
+    padding: 15px 2.5%;
+    background-color: var(--light-blue);
+}
+
+.icon-list-container {
+    width: 95%;
+    background-color: var(--light-blue);
+    border-left: 7px solid var(--blue);
+    padding: 25px 20px;
+    margin-bottom: 50px;
+}
+
+.icon-list-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    margin: auto;
+}
+
+.icon-list-list ul {
+    padding-left: 15px;
+}
+
+.icon-list-list li {
+    margin-bottom: 10px;
+}
+
 .email-booking {
     display: none;
 }
