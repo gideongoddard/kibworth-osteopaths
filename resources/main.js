@@ -32,10 +32,30 @@ const toggleAccordion = () => {
     }
 }
 
-// Osteo lg nav hover function
+// Pilates mobile nav accordion function
+let pilatesMobNav = document.getElementById('pilates-mob-nav');
+let pilatesPlus = document.getElementById('pilates-plus');
+let pilatesMinus = document.getElementById('pilates-minus')
+
+const togglePilatesAccordion = () => {
+    if (pilatesMobNav.style.display === 'block') {
+        pilatesMobNav.style.display = 'none';
+        pilatesPlus.style.display = 'inline';
+        pilatesMinus.style.display = 'none';
+    } else {
+        pilatesMobNav.style.display = 'block';
+        pilatesPlus.style.display = 'none';
+        pilatesMinus.style.display = 'inline';
+    }
+}
+
+// Lg nav expand functions
 let osteoLgNav = document.getElementById('osteo-lg-nav');
 let osteoDown = document.getElementById('osteo-down');
 let osteoUp = document.getElementById('osteo-up');
+let pilatesLgNav = document.getElementById('pilates-lg-nav');
+let pilatesDown = document.getElementById('pilates-down');
+let pilatesUp = document.getElementById('pilates-up');
 
 const toggleOsteoSubnav = () => {
     if (osteoLgNav.style.display === 'flex') {
@@ -44,8 +64,26 @@ const toggleOsteoSubnav = () => {
         osteoUp.style.display = 'none';
     } else {
         osteoLgNav.style.display = 'flex';
+        pilatesLgNav.style.display = 'none';
         osteoDown.style.display = 'none';
+        pilatesUp.style.display = 'none';
         osteoUp.style.display = 'inline';
+        pilatesDown.style.display = 'inline';
+    }
+}
+
+const togglePilatesSubnav = () => {
+    if (pilatesLgNav.style.display === 'flex') {
+        pilatesLgNav.style.display = 'none';
+        pilatesDown.style.display = 'inline';
+        pilatesUp.style.display = 'none';
+    } else {
+        pilatesLgNav.style.display = 'flex';
+        osteoLgNav.style.display = 'none';
+        pilatesDown.style.display = 'none';
+        osteoUp.style.display = 'none';
+        pilatesUp.style.display = 'inline';
+        osteoDown.style.display = 'inline';
     }
 }
 
