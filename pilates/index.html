@@ -69,7 +69,11 @@
                         <li><a href="../osteopathy/cranial-osteopathy/">Cranial Osteopathy</a></li>
                         <li><a href="../osteopathy/what-to-expect/">What to expect</a></li>
                     </ul>
-                    <li><a href="./">Pilates</a></li>
+                    <li><a onclick="togglePilatesSubnav()" href="#">Pilates<i id="pilates-down" class="fas fa-caret-down fa-lg"></i><i id="pilates-up" class="fas fa-caret-up fa-lg"></i></a></li>
+                    <ul id="pilates-lg-nav">    
+                        <li><a href="../pilates/">Pilates</a></li>
+                        <li><a href="./prenatal-postnatal-pilates/">Prenatal & Postnatal Pilates</a></li>
+                    </ul>
                     <li><a href="../about/">About</a></li>
                     <li><a href="../faq/">FAQ</a></li>
                     <li><a href="../appointments/">Appointments</a></li>
@@ -80,7 +84,10 @@
                         <li><a class="nav-link" href="../osteopathy/cranial-osteopathy/">Cranial Osteopathy</a></li>
                         <li><a class="nav-link" href="../osteopathy/what-to-expect/">What to expect</a></li>
                     </ul>
-                    <li><a class="nav-link" href="./">Pilates</a></li>
+                    <li><a class="nav-link" href="../pilates/">Pilates</a><a href="javascript:void(0);" class="icon" onclick="togglePilatesAccordion()"><i id="pilates-plus" class="fas fa-plus"></i><i id="pilates-minus" class="fas fa-minus"></i></a></li>
+                    <ul id="pilates-mob-nav">
+                        <li><a class="nav-link" href="./prenatal-postnatal-pilates/">Prenatal & Postnatal Pilates</a></li>
+                    </ul>
                     <li><a class="nav-link" href="../about/">About</a></li>
                     <li><a class="nav-link" href="../faq/">FAQ</a></li>
                     <li><a class="nav-link" href="../appointments/">Appointments</a></li>
@@ -213,6 +220,7 @@
             <div class="footer-center">
                 <ul>
                     <li><a href="./">About Pilates</a></li>
+                    <li><a href="./prenatal-postnatal-pilates/">Prenatal & Postnatal Pilates</a></li>
                     <li><a href="../about/">About us</a></li>
                     <li><a href="../faq/">Frequently asked questions</a></li>
                     <li><a href="../privacy/">Privacy Policy</a></li>
