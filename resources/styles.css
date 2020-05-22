@@ -658,6 +658,10 @@ i {
         align-self: center;
     }
 
+    .map-col {
+        width: 100%;
+    }
+
     .image-col img {
         box-shadow: 2px 2px 5px 1px var(--dark-grey);
     }

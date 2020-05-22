@@ -89,26 +89,26 @@ const togglePilatesSubnav = () => {
 
 // Google Maps
 function initOsteoMap() {
-    var osteo = {lat: 52.534, lng: -0.999};
+    var osteo = {lat: 52.5443, lng: -0.955908};
     var osteoMap = new google.maps.Map(document.getElementById('home-map'), {zoom: 12, center: osteo});
     var marker = new google.maps.Marker({position: osteo, map: osteoMap});
 }
 
 function initPilatesMap() {
-    var pilates = {lat: 52.534, lng: -0.931};
+    var pilates = {lat: 52.544381, lng: -0.955908};
     var pilatesMap = new google.maps.Map(document.getElementById('pilates-map'), {zoom: 12, center: pilates});
     var marker = new google.maps.Marker({position: pilates, map: pilatesMap});
 }
 
 function initAboutMap() {
-    var osteo = {lat: 52.534, lng: -0.999};
+    var osteo = {lat: 52.544381, lng: -0.955908};
     var osteoMap = new google.maps.Map(document.getElementById('about-map'), {zoom: 12, center: osteo});
     var marker = new google.maps.Marker({position: osteo, map: osteoMap});
 }
 
 function initAppointmentsMaps() {
-    var osteo = {lat: 52.534, lng: -0.999};
-    var pilates = {lat: 52.534, lng: -0.931};
+    var osteo = {lat: 52.544381, lng: -0.955908};
+    var pilates = {lat: 52.544381, lng: -0.955908};
     var osteoMap = new google.maps.Map(document.getElementById('appointments-osteo-map'), {zoom: 12, center: osteo});
     var pilatesMap = new google.maps.Map(document.getElementById('appointments-pilates-map'), {zoom: 12, center: pilates});
     var osteoMarker = new google.maps.Marker({position: osteo, map: osteoMap});
