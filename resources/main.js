@@ -106,10 +106,10 @@ function initAboutMap() {
     var marker = new google.maps.Marker({position: osteo, map: osteoMap});
 }
 
-function initAppointmentsMaps() {
+function initAppointmentsMap() {
     var osteo = {lat: 52.544381, lng: -0.955908};
-    var osteoMap = new google.maps.Map(document.getElementById('appointments-osteo-map'), {zoom: 12, center: osteo});
-    var osteoMarker = new google.maps.Marker({position: osteo, map: osteoMap});
+    var osteoMap = new google.maps.Map(document.getElementById('appointments-map'), {zoom: 12, center: osteo});
+    var marker = new google.maps.Marker({position: osteo, map: osteoMap});
 }
 
 // Modal
