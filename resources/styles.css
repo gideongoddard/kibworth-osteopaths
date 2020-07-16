@@ -1102,7 +1102,7 @@ footer a:hover {
 .address {
     list-style-type: none;
     padding: 20px;
-    border: 1px solid var(--blue);
+    border: 1px solid black;
 }
 
 @media only screen and (min-width: 750px) {
