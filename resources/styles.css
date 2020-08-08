@@ -1001,8 +1001,12 @@ footer a:hover {
 /* *************** */
 
 #home-banner {
-    background-image: url('./img/kmc-banner.jpg');
+    background-image: url('./img/the-manor-pond.jpeg');
     background-position: center;
+}
+
+#home-banner h1, #home-banner h2 {
+    text-shadow: 2px 2px 2px var(--dark-grey);
 }
 
 .emily-pic {
