@@ -760,7 +760,8 @@ i {
 }
 
 #logo img {
-    max-width: 205px;
+    max-height: 98px;
+    width: auto;
 }
 
 #main-nav, #times, #osteo-minus, #osteo-up, #pilates-minus, #pilates-up, #email {
